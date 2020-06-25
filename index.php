@@ -17,10 +17,15 @@ require_once("config.php");
 
 $usuario = new Usuario();
 
-$usuario->loadById(2);
+$usuario->loadById(17);
 
-$usuario->update("professor", "a2b1");
+$userId = $usuario->getIdusuario();
+$usuario->delete();
 
-echo $usuario;
+// $usuario->loadById(2);
+
+// $usuario->update("professor", "a2b1");
+
+echo "usuario " . $userId . " deletado com sucesso" ;
 
 ?>
