@@ -6,11 +6,14 @@ require_once("config.php");
 // $root ->loadById(5);
 // echo $root;
 
-// $list = Usuario::getList(2);
+// $list = Usuario::getList();
 // echo json_encode($list);
 
-$login = new Usuario();
-$login->login("bruna", "a1b2");
-echo $login;
+// $login = new Usuario();
+// $login->login("gustavo", "1234");
+
+$aluno = new Usuario("aluno", "4321");
+$aluno->insert();
+echo $aluno;
 
 ?>
